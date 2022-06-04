@@ -6,6 +6,14 @@ using std::string;
 using std::cout;
 using std::cin;
 
+string getWord(string word)
+{
+    cout << "Please enter a word ";
+    cin >> word;
+    cout << "You entered " << word << ". " << "\n";
+    return word;
+}
+
 
 int main() 
 {
@@ -17,14 +25,10 @@ int main()
     while(keepgoing)
     {
         //Get First Player Word
-        cout << "Please enter a word ";
-        cin >> firstWord;
-        cout << "You entered " << firstWord << ". " << "\n";
+        string firstWord = getWord(firstWord);
 
         //Get Second Player Word
-        cout << "Please enter a word ";
-        cin >> secondWord;
-        cout << "You entered " << secondWord << ". " << "\n";
+        string secondWord = getWord(secondWord);
         
         //Get word lengths
         int lengthOne = firstWord.length();
