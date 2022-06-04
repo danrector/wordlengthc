@@ -60,4 +60,6 @@ int main()
             keepgoing = false;
         }        
     }
+
+    return 0;
 }
